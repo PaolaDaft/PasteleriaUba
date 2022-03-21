@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido</title>
+</head>
+
+<body>
+    <header class="header">
+        <img src="../img/logo.png" alt="Logo Pastelería Uba" width="200px">
+        <h1 class="header__title">Pastelería Uba</h1>
+        <ul class="header_menu">
+            <li class="header__menu__item"><a href="../index.html" target="blank">Inicio</a></li>
+        </ul>
+    </header>
+    
+    <section>
+        <form action="pedido.js">
+            <h2>Para llebar a tu pedido por favor llena el formulario</h2>
+            <br>
+            <h3>Tus datos</h3>
+            <label for="customer_name">Nombre</label> <br>
+            <input type="text" id="customer_name" name="customer_name" placeholder="Ana García"> <br><br>
+    
+            <label for="customer_phone">Número de telefono</label> <br>
+            <input type="tel" id="customer_phone" name="customer_phone" maxlength="10" placeholder="7351453256"> <br><br>
+    
+            <label for="customer_email">Email</label> <br>
+            <input type="email" id="customer_email" name="customer_email" placeholder="anagarcia45@gmail.com"> <br><br>
+            <br>
+    
+            <h3>Sobre el pastel</h3>
+            <label for="cakeSize">Tamaño del pastel</label> <br>
+            <input type="radio" id="ch" name="cakeSize" value="ch">
+            <label for="ch">Chico</label><br>
+            <input type="radio" id="med" name="cakeSize" value="med">
+            <label for="med">Mediano</label><br>
+            <input type="radio" id="gr" name="cakeSize" value="gr">
+            <label for="gr">Grande</label><br><br>
+            <label for="flavor1">Sabor(es) del pastel</label> <br>
+            <input type="checkbox" id="flavor1" name="flavor1" value="3chocolates">
+            <label for="flavor1">3 Chocolates</label><br>
+            <input type="checkbox" id="flavor2" name="flavor2" value="quesozarzamora">
+            <label for="flavor2">Queso con zarzamora</label><br>
+            <input type="checkbox" id="flavor3" name="flavor3" value="3leches">
+            <label for="flavor3">3 Leches</label><br>
+            <input type="checkbox" id="flavor4" name="flavor4" value="napolitano">
+            <label for="flavor4">Napolitano</label><br>
+            <input type="checkbox" id="flavor5" name="flavor5" value="zanahoria">
+            <label for="flavor5">Zanahoria</label><br><br>
+
+            <h3>Decoracion(es) del pastel </h3>
+            <label for="dedication">¿Quieres una dedicatoria?</label> <br>
+            <input type="radio" id="yes" name="dedication" value=1>
+            <label for="yes">Sí</label>
+            <input type="radio" id="no" name="dedication" value=0>
+            <label for="no">No</label><br>
+            <input type="text" id="inscription" name="inscription" placeholder="Escribe tu dedicatoria aquí..."> <br><br>
+            <input type="checkbox" id="decoration1" name="decoration1" value="merenguebasico">
+            <label for="decoration1">Decorado de merengue básico</label><br>
+            <input type="checkbox" id="decoration2" name="decoration2" value="merenguepersonalizado">
+            <label for="decoration2">Decorado de merengue personalizado</label><br>
+            <input type="checkbox" id="decoration3" name="decoration3" value="decoradofondant">
+            <label for="decoration3">Decorado de fondant</label><br>
+            <input type="checkbox" id="decoration4" name="decoration4" value="figurasfondant">
+            <label for="decoration4">Figuras de fondant</label><br>
+            <input type="checkbox" id="decoration5" name="decoration5" value="floresazúcar">
+            <label for="decoration5">Decoración con flores de azúcars</label><br>
+            <input type="checkbox" id="decoration6" name="decoration6" value="floresnaturales">
+            <label for="decoration6">Decoración con flores naturales</label><br>
+            <br>
+    
+            <h3>Sobre la entrega</h3>
+            <label for="delivery_date">Fecha y hora de entrega </label><br>
+            <input type="date" id="delivery_date" name="delivery_date">
+            <input type="time" id="delivery_time" name="delivery_time"><br><br>
+            <br>
+            <label for="delivery">¿Recoge en sucursal o entrega a domicilio?</label> <br>
+            <input type="radio" id="subsidiary" name="delivery" value="subsidiary">
+            <label for="subsidiary">En sucursal</label><br>
+            <input type="radio" id="home_delivery" name="delivery" value="home_delivery">
+            <label for="home_delivery">A domicilio</label><br>
+            <br>
+            <!--Me gutaría partir la dirección en más partes-->
+            <label for="customer_address">Dirección</label> <br>
+            <input type="text" id="customer_address" name="customer_address"
+                placeholder="Calle Adolfo Lopéz Mateos #45, Barrio San Mugiel, Ocuituco"> <br><br>
+    
+            <br>
+            <input type="button" id="order" name="order" value="Finalizar mi Pedido c:"
+                onclick="alert('Tu pedido ha siso enviado, gracias por tu preferencia');"><br><br>
+            <!--sustituir con un sumbmit y luego viserversa-->    
+        </form>
+    </section>
+
+    <footer>
+        <p>Pasteleía Uba SA de CV</p>
+        <p>Av Reforma #72, Morelos, Cuautla</p>
+        <p>Horarios de atención: Lunes - Viernes de 7:00 am a 8:00 pm. Sabados y Domingos de 9:00 am a 4:00 pm</p>
+        <p>Teléfono: <a href="tel:+7354863574">+7354863574</a></p>
+
+    </footer>
+</body>
+
+</html>

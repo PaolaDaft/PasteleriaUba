@@ -9,52 +9,93 @@
 </head>
 
 <body>
-    <header>
-        <h1>Pastelería Uba</h1>
-        <h2>Pasteles para compartir</h2>
-        <img src="./logo.png" alt="Logo Pastelería Uba" width="200px">
-        <a href="./adminPastelero.html" target="blank"> Pastelero </a>
-    <br>
-    <a href="./pedidoForm.html" target="blank">
-        <input type="button" value="Haz un pedido" name="" id="">
-    </a>
-    <!--el target blank se recominda cuando vamos a nua navegación exterior a nuestra página-->
 
+    <header class="header">
+        <img src="./img/logo.png" alt="Logo Pastelería Uba" width="200px">
+        <h1 class="header__title">Pastelería Uba</h1>
+        <h2 class="header__title">Horneamos momentos especiales</h2>
+        <ul class="header_menu">
+            <li class="header__menu__item"><a href="./html/pedidoForm.html" target="blank">Haz tu pedido</a></li>
+            <li class="header__menu__item"><a href="./html/adminPastelero.html" target="blank"> Pastelero </a></li>
+        </ul>
     </header>
 
+    <section>
+        <h3>Sabores</h3>
+        <dl>
+            <dt>3 Chocolates</dt>
+            <dd>Deliciosos bizcocho hecho a base de 3 chocolates: amargo, semi-amargo y de leche
+                <ul>
+                    <li>Chico ............$290</li>
+                    <li>Mediano ............$350</li>
+                    <li>Grander ............$456</li>
+                </ul>
+            </dd><br>
 
-    <h3>Sabores</h3>
-    <p>sabores tururru</p>
-    <dl>
-        <dt>Chocolate</dt>
-        <dd>............$54</dd>
+            <dt>Queso con zarzamora</dt>
+            <dd>Bizcocho sabor vainilla con relleno de nuestra mermelada cacera de zarzamora y queso philadelphia
+                <ul>
+                    <li>Chico ............$300</li>
+                    <li>Mediano ............$390</li>
+                    <li>Grander ............$475</li>
+                </ul>
+            </dd><br>
 
-        <dt>Queso con zarzamora</dt>
-        <dd>pastel relleno de zarzamora y queso $45</dd>
+            <dt>3 Leches</dt>
+            <dd>El clásico sabor de 3 leches con un bizcocho esponjosos y húmedo
+                <ul>
+                    <li>Chico ............$280</li>
+                    <li>Mediano ............$350</li>
+                    <li>Grander ............$445</li>
+                </ul>
+            </dd><br>
 
-        <dt>3 leches espcial</dt>
-        <dd>.......... $445</dd>
+            <dt>Napolitano</dt>
+            <dd>La combinación de los 3 sabores favoritos de todos los tiempos: fresa ,chocolate y vainilla, relleno de
+                durazno y fresa
+                <ul>
+                    <li>Chico ............$295</li>
+                    <li>Mediano ............$385</li>
+                    <li>Grander ............$485</li>
+                </ul>
+            </dd><br>
 
-        <dt>3 Chocolates</dt>
-        <dd>..........$445</dd>
-    </dl>
+            <dt>Zanahoria</dt>
+            <dd>Lo simples es lo que más se disfruta, delicioso bizcocho de zanahoria con ralladura de
+                zanahoria............$445
+                <ul>
+                    <li>Chico ............$250</li>
+                    <li>Mediano ............$350</li>
+                    <li>Grander ............$445</li>
+                </ul>
+            </dd><br>
+        </dl>
 
 
-    <h3>Decoraciones</h3>
-    <p>Decoraciones turururu</p>
-    <ul>
-        <li>Decorado básico con merengue</li>
-        <li>Figuras con fondant</li>
-        <li>Dedicaroia</li>
-        <li>Decoración básico con fondant</li>
-        <li>Flores azucaradas</li>
-        <li>Flores naturales</li>
-    </ul>
+        <h3>Decoraciones</h3>
+        <li>Dedicatoria ............ Incluido en cualquuier pastel</li>
+        <li>Decorado de merengue básico ............ Incluido en cualquuier pastel</li>
+        <li>Decorado de merengue personalizado ............$45</li>
+        <li>Decorado de fondant ............$80</li>
+        <li>Figuras de fondant ............$55</li>
+        <li>Decoración con flores de azúcar ............$55</li>
+        <li>Decoración con flores naturales ............$100</li>
+        </ul>
 
-    
+        <br>
+        <a href="./pedidoForm.html" target="blank">
+            <input type="button" value="Haz un pedido" name="" id="">
+        </a>
 
-    <p>Info pasteleria</p>
+    </section>
 
+    <footer>
+        <p>Pasteleía Uba SA de CV</p>
+        <p>Av Reforma #72, Morelos, Cuautla</p>
+        <p>Horarios de atención: Lunes - Viernes de 7:00 am a 8:00 pm. Sabados y Domingos de 9:00 am a 4:00 pm</p>
+        <p>Teléfono: <a href="tel:+7354863574">+7354863574</a></p>
+
+    </footer>
 
 </body>
 
